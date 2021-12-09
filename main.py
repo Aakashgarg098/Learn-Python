@@ -1,6 +1,7 @@
 # print("Hello, World!")
 # print("Welcome","Aakash",sep=" | ")
-# print("Bye " * 5, sep="\t")
+# print("Bye" * 5, sep="\t")
+# print("-".join(["Aakash","Garg"]))
 
 # Single Line Comment
 '''
@@ -112,3 +113,77 @@ This is a syntax of multi line comment
 #     f.seek(10)
 #     print(f.tell())
 
+# Scope - Local, Global Variable, Global Keyword
+# x = 88
+# def aakash():
+#     x = 20
+#     def rohan():
+#         global x
+#         x = 10
+#     print("Before calling rohan()",x)
+#     rohan()
+#     print("After calling rohan()",x)
+# aakash()
+# print(x)
+
+# Recursion
+# def aakash(n):
+#     return n("This is Aakash")
+# aakash(print)
+
+# Lambda/Anonymous Functions
+# re = lambda x,y:x*y
+# print(re(10, 20))
+# a = [[3,2],[5,4],[1,3]]
+# a.sort(key=lambda x:x[0])
+# print(a)
+
+# *args and **kwargs
+# def name(a,*d,**kwargs):
+#     print(a,d,kwargs)
+# name("Nakul",*["Divya","Nitesh"],**{"1":"Aakash","2":"Nakul"})
+
+# Time Module
+# import time
+# print(time.asctime(time.localtime(time.time())))
+# initial = time.time()
+# for i in range(1000000000):
+#     pass
+# print(time.time() - initial)
+# i = 0
+# initial2 = time.time()
+# while i<1000000000:
+#     i+=1
+# print(time.time() - initial2)
+
+# Enumerate
+# li = [12,43,12,435,135,523]
+# for i, val in enumerate(li):
+#     print(i,val,sep=" : ")
+
+# import sys
+# print(sys.path)
+
+# Map
+# li = ["2","4","6"]
+# a = list(map(int, li))
+# a[0] = a[0] + 10
+# print(a)
+
+# Filter
+# a = list(filter(lambda x:x>4, list(map(int, li))))
+# print(a)
+
+# Reduce
+# from functools import reduce
+# a = reduce(lambda x,y:x*y, [1,2,3])
+# print(a)
+
+# Decorators
+# def fun1(num):
+#     print("Before Aakash")
+#     num()
+#     print("After Aakash")
+# @fun1
+# def aakash():
+#     print("Aakash is here...")
