@@ -1,7 +1,7 @@
-# print("Hello, World!")
-# print("Welcome","Aakash",sep=" | ")
-# print("Bye" * 5, sep="\t")
-# print("-".join(["Aakash","Garg"]))
+print("Hello, World!")
+print("Welcome","Aakash",sep=" | ")
+print("Bye" * 5, sep="\t")
+print("-".join(["Aakash","Garg"]))
 
 # Single Line Comment
 '''
